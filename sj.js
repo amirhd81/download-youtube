@@ -43,10 +43,24 @@ const browser = await chromium.launch({
 
     await page.waitForTimeout(1000);
 
-    console.log("source count:", await page.locator("source").count());
-console.log("video count:", await page.locator("video").count());
+// Wait a moment for iframe to load
+await page.waitForTimeout(3000);
 
-console.log("FRAMES:", page.frames().map(f => f.url()));
+// Find the streamable iframe
+const frame = page.frame(f => f.url().includes("streamable.com"));
+
+if (!frame) {
+    console.log("No streamable iframe found!");
+    process.exit();
+}
+
+// Wait for source inside iframe
+await frame.waitForSelector("source");
+
+// Extract URL
+const src = await frame.getAttribute("source", "src");
+
+console.log("Final video src:", src);
 
     const html = await page.content();
 
