@@ -48,9 +48,7 @@ await page.waitForTimeout(3000);
     const div = await page.locator("div.svp-desktop-player")
 
 
-  fs.writeFileSync('page4.html', div);
-
-  console.log('HTML saved');
+  console.log(div, 'HTML saved');
   
   // await page.waitForTimeout(500000);
 
