@@ -3,7 +3,7 @@ const chromiumPath = "/usr/bin/chromium-browser";
 
 (async () => {
 
-const browser = await playwright.chromium.launch({
+const browser = await chromium.launch({
     executablePath: chromiumPath,
     headless: true
    });
