@@ -54,7 +54,7 @@ console.log(exists, "error exists");
 
     const html = await page.content();
 
-    const src = await page.getAttribute('source', 'src');
+    const src = await page.locator('source').getAttribute('src');
 console.log(src); 
 
   // save to file
