@@ -30,6 +30,8 @@ const browser = await chromium.launch({
 
   await page.goto('https://streamable.com/ri37ps');
 
+    console.log("URL before click:", page.url());
+
     console.log("filling password")
 
   await page.fill('form[name="video-password"] input[name="password"]', 'gvc277');
@@ -41,6 +43,8 @@ const browser = await chromium.launch({
 
     clicked = true
     console.log(clicked, "buttong clicked")
+
+    console.log("URL after click:", page.url());
     const exists = await page.locator('p.invisible').count() > 0;
 
 console.log(exists, "error exists");
@@ -50,7 +54,7 @@ console.log(exists, "error exists");
   logFile.end();
 
     await page.waitForLoadState('networkidle');
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(20000);
 
     const html = await page.content();
 
@@ -62,7 +66,7 @@ console.log(src);
 
   console.log('HTML saved');
   
-  await page.waitForTimeout(500000);
+  // await page.waitForTimeout(500000);
 
   await browser.close();
 })();
