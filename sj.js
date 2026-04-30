@@ -40,6 +40,7 @@ const browser = await chromium.launch({
     console.log("password got filled")
 
   await page.click('button[type="submit"]');
+    console.log("Frames in page:", page.frames().map(f => f.url()));
 
     clicked = true
     console.log(clicked, "buttong clicked")
