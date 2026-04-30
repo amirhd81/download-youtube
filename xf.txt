@@ -1,0 +1,15 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+.xhamster.com	TRUE	/	FALSE	1801514309	cookie_accept_v2	%7B%22e%22%3A1%2C%22f%22%3A1%2C%22t%22%3A1%2C%22a%22%3A1%7D
+.xhamster.com	TRUE	/	FALSE	1801514308	parental-control	yes
+.xhamster.com	TRUE	/	TRUE	1805582017	_ga	GA1.1.793486856.1769978332
+.xhamster.com	TRUE	/	FALSE	1801517228	moments_listing_ad_offset	1
+.xhamster.com	TRUE	/	FALSE	1802101978	dyltv-shown-counter	3
+.xhamster.com	TRUE	/	TRUE	1805582057	_ga_M59JX8S6QE	GS2.1.s1771022016$o8$g1$t1771022057$j19$l0$h1525434543
+.xhamster.com	TRUE	/	FALSE	1803456979	moments_offset	30
+.xhamster.com	TRUE	/	FALSE	1803456979	ff_thumb_offset	8
+.xhamster.com	TRUE	/	FALSE	1803760667	settings	eyJpc1dlYnBTdXBwb3J0ZWQiOnRydWUsImlzV2VibVN1cHBvcnRlZCI6dHJ1ZSwiZXh0RGV0ZWN0ZWRWMiI6ZmFsc2UsIm1vbWVudHNJc0hpZGRlbiI6bnVsbCwiaXNTaWRlYmFySGlkZGVuIjpudWxsLCJleHBpcmVzIjp7ImV4dERldGVjdGVkVjIiOjE3NzE4MzQzNzB9LCJ0c1Nwb3RDb3VudGVycyI6W3sic3BvdCI6Im1hc3Rlcl9mb290ZXIiLCJ0aW1lIjoxNzcyMjI0NjY2LCJjb3VudCI6MX0seyJzcG90IjoibWFzdGVyX3BsYXllcl9wYXVzZSIsInRpbWUiOjE3NzIyMjQ2NjYsImNvdW50IjoxfV19
+xhamster.com	FALSE	/	FALSE	1787776673	g_state	{"i_l":0,"i_ll":1772224673258,"i_b":"3ya5qIbQC0Vw3ot2L4xampiv5V7uru4RAgkiB0FV7d4","i_e":{"enable_itp_optimization":0}}
+xhamster.com	FALSE	/	FALSE	0	ts_popunder	true
