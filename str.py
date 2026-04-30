@@ -35,11 +35,18 @@ def extract_streamable_id(url_or_id: str) -> str:
     return m.group(1) if m else url_or_id
 
 
+
 def extract_streamable(url_or_id: str) -> dict:
     video_id = extract_streamable_id(url_or_id)
 
+    password = "wfa682"
+
+    payload = {}
+    if password:
+        payload["password"] = password
+
     api_url = f"https://ajax.streamable.com/videos/{video_id}"
-    resp = requests.get(api_url, timeout=15)
+    resp = requests.post(api_url, json=payload)
     resp.raise_for_status()
     video = resp.json()
 
