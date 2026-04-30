@@ -41,7 +41,7 @@ const browser = await chromium.launch({
 
   logFile.end();
 
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(10000);
 
 await page.waitForTimeout(3000);
 
