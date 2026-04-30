@@ -48,7 +48,8 @@ await page.waitForTimeout(3000);
     const div = await page.locator("div.svp-desktop-player")
 
     const html = await div.innerHTML();
-console.log(html);
+
+    fs.writeFileSync('div.html', html, 'utf8');
   
   // await page.waitForTimeout(500000);
 
