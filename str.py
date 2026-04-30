@@ -48,8 +48,12 @@ def extract_streamable(url_or_id: str) -> dict:
 
     api_url = f"https://api-f.streamable.com/api/v1/videos/{video_id}/password"
     resp = requests.post(api_url, json=payload)
-    resp.raise_for_status()
+    resp.raise_for_status
+
+    
     video = resp.json()
+
+    print(json.dumps(video, indent=4, sort_keys=True))
 
     # Status meanings:
     # 0 uploading, 1 processing, 2 ready, 3 error
