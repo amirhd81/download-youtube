@@ -1,5 +1,6 @@
 const { chromium } = require('playwright');
 const chromiumPath = "/usr/bin/chromium-browser";
+const fs = require('fs');
 
 (async () => {
 
