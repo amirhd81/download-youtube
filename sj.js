@@ -48,6 +48,16 @@ console.log(exists, "error exists");
 
 
   logFile.end();
+
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(5000);
+
+    const html = await page.content();
+
+  // save to file
+  fs.writeFileSync('page2.html', html);
+
+  console.log('HTML saved');
   
   await page.waitForTimeout(500000);
 
