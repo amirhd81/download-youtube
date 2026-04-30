@@ -39,15 +39,15 @@ def extract_streamable_id(url_or_id: str) -> str:
 def extract_streamable(url_or_id: str) -> dict:
     video_id = extract_streamable_id(url_or_id)
 
-    password = "wfa682"
+    password = "gvc277"
 
     payload = {}
     if password:
         payload["password"] = password
 
 
-    api_url = f"https://api.streamable.com/videos/{video_id}?password=wfa682"
-    resp = requests.get(api_url, timeout=15)
+    api_url = f"https://api-f.streamable.com/api/v1/videos/{video_id}/password"
+    resp = requests.post(api_url, json=payload)
     resp.raise_for_status()
     video = resp.json()
 
